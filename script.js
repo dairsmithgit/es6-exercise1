@@ -8,6 +8,7 @@ class Room {
         this.name = name;
         this.length = length;
         this.width = width;
+        this.available = true;
     }
     getArea() {
         return this.length * this.width;
@@ -27,4 +28,9 @@ console.log(room1.getPerimeter());
 console.log(room2);
 console.log(room2.getArea());
 console.log(room2.getPerimeter());
+
+room2.available = false;
+
+console.log(room1.available);
+console.log(room2.available);
 
